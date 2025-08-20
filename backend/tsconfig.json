@@ -1,9 +1,5 @@
 {
-  "exclude": [
-    "../frontend",
-    "frontend",
-    "**/frontend/**"
-  ],
+  "exclude": ["../frontend", "frontend", "**/frontend/**"],
   "compilerOptions": {
     "module": "commonjs",
     "declaration": true,

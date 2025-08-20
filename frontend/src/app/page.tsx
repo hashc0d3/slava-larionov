@@ -1,19 +1,13 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { Greeting } from '@/features/greeting/ui/Greeting';
 
 export default function Home() {
-    const [greeting, setGreeting] = useState('');
 
-    useEffect(() => {
-        fetch('/api/greeting')
-            .then(res => res.json())
-            .then(data => setGreeting(data.message));
-    }, []);
+  return (
+    <>
+      <Greeting />
 
-    return (
-        <div>
-            {greeting ? greeting : 'Загрузка...'}
-        </div>
-    );
+    </>
+  )
 }
